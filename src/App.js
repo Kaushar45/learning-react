@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import "./App.css";
 import CounterCard from "./component/ConunterCard";
 import StudentCard from "./component/StudentsCard";
+import Navbar from "./component/Navbar";
 
 function App() {
   const [students, setStudents] = useState([
@@ -11,8 +12,8 @@ function App() {
       subStream: "CS",
     },
     {
-      name: "Shatrughan Kumar",
-      class: "12",
+      name: "Lakshman",
+      class: "11",
       subStream: "Art",
     },
     {
@@ -21,8 +22,8 @@ function App() {
       subStream: "Mathematics",
     },
     {
-      name: "Lakshman",
-      class: "11",
+      name: "Shatrughan Kumar",
+      class: "12",
       subStream: "Art",
     },
   ]);
@@ -32,6 +33,7 @@ function App() {
     <>
       {/* <React.Fragment> */}
       {/* <Fragment> */}
+      <Navbar />
       <div className="main-container">
         <CounterCard />
         <CounterCard />
