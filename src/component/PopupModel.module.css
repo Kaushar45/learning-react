@@ -1,0 +1,32 @@
+.popupContainer{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.901);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    transform: scale(0);
+    z-index: -10;
+    
+}
+
+.popupActive{
+    z-index: 50;
+    transform: scale(1);
+}
+
+.popupContainer > div{
+    background-color: white;
+    color: black;
+    max-width: 600px;
+    width: 90%;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.popupContainer > div div{
+    display: flex;
+    justify-content: center;
+   gap: 2rem;
+}
