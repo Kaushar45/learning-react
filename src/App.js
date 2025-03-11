@@ -42,14 +42,14 @@ function App() {
       {/* <React.Fragment> */}
       {/* <Fragment> */}
       <Navbar />
-      <secion style={{ marginTop: "80px" }}>
+      <section style={{ marginTop: "80px" }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
-      </secion>
+      </section>
 
       <div className="main-container">
         <CounterCard />
